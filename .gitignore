@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+static/uploads/*
+!static/uploads/.gitkeep
+.ipynb_checkpoints/
+

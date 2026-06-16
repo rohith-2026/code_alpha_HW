@@ -1,0 +1,38 @@
+.result-view {
+  display: grid;
+  gap: 24px;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.result-panel {
+  width: min(520px, 100%);
+  padding: 32px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  text-align: center;
+}
+
+.result-panel h1 {
+  margin: 8px 0;
+  font-size: 5rem;
+}
+
+.eyebrow {
+  color: var(--muted);
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.alternatives {
+  color: var(--muted);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}

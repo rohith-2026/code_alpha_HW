@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="/static/css/global.css">
+    <link rel="stylesheet" href="/static/css/result.css">
+  </head>
+  <body>
+    <main class="result-view">
+      <a href="/">Character AI</a>
+      <section class="result-panel">
+        <p class="eyebrow">Prediction</p>
+        <h1>{{ prediction or "No result yet" }}</h1>
+        <p>Confidence: {{ "%.2f"|format(confidence * 100) }}%</p>
+        {% if alternatives %}
+        <p class="alternatives">Closest: {{ alternatives }}</p>
+        {% endif %}
+        <div class="actions">
+          <a class="button" href="/draw">Draw Again</a>
+          <a class="button ghost" href="/process">Upload Another</a>
+        </div>
+      </section>
+    </main>
+    <script src="/static/js/result.js"></script>
+  </body>
+</html>
