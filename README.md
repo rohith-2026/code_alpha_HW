@@ -1,6 +1,6 @@
 # Handwritten Character Recognition
 
-A FastAPI starter app for handwritten character recognition with routes, services, templates, static assets, training outputs, and model placeholders.
+AI-powered handwritten character recognition system built with FastAPI, PyTorch, and EMNIST ByClass. Supports digits, uppercase, and lowercase letters with real-time character prediction, confidence scoring, and an interactive drawing canvas.
 
 ## Run
 
